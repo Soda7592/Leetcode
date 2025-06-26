@@ -18,4 +18,4 @@ Explanation: 2 does not exist in nums so return -1
 
 # Opinion
 
-We need to sort this array first(but this problem had made it.), then we could implement the binary search logic. Set Left most and Right most index, if `nums[(Right+Left)/2]` is smaller than target, ignoring every elements in (r+l)/2 left side, This logic also applies to right side.
+First, we need to consider sorting the array (although this problem specifies the array is already sorted.). Then we can implement the binary search logic. Set Left most and right most index, if `nums[(Right+Left)/2]` is smaller than target, we can ignore all elements on the left side of (r+l)/2, This logic also applies to right side.
