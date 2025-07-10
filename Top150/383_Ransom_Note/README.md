@@ -17,7 +17,6 @@ Example 3:
 
 Input: ransomNote = "aa", magazine = "aab"
 Output: true
-
+ 
 # Approach
-When alpahbets in `magazine` can compose a `ransomNote` return true.
-It's very striaghtforward, we can create a table such as hash table or even a array(because it only contains lowercase letters.)
+As long as any word in magazine can be split into ransomeNote, true is returned. We can directly create a hash table or even an array to record the letters that appear, and then compare the number of times the letters appear in the two strings.
